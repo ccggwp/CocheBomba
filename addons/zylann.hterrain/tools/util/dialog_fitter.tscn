@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnsha0vrrs0y6"]
+
+[ext_resource type="Script" uid="uid://de0s5m3snd2sj" path="res://addons/zylann.hterrain/tools/util/dialog_fitter.gd" id="1"]
+
+[node name="DialogFitter" type="Control"]
+mouse_filter = 2
+script = ExtResource("1")
+__meta__ = {
+"_edit_use_anchors_": false
+}

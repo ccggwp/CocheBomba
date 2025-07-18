@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://s04cx7dgsgkx"]
+
+[ext_resource type="Script" uid="uid://bxstuv6eoiya1" path="res://effects/blast.gd" id="1_mvhpo"]
+[ext_resource type="Texture2D" uid="uid://ccs8la51mtidm" path="res://effects/blast1.png" id="2_2xrq2"]
+
+[node name="blast" type="Node3D"]
+script = ExtResource("1_mvhpo")
+
+[node name="Decal" type="Decal" parent="."]
+size = Vector3(5, 5, 5)
+texture_albedo = ExtResource("2_2xrq2")
+cull_mask = 1047553
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 120.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

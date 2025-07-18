@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0j1ebgrka2fo"]
+
+[ext_resource type="Script" uid="uid://bes8lgpq21w2y" path="res://weapons/Projectile.gd" id="1_n1fvb"]
+
+[node name="Projectile" type="Node3D"]
+script = ExtResource("1_n1fvb")
+
+[node name="Marker3D" type="Marker3D" parent="."]
